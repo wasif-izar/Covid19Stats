@@ -1,5 +1,6 @@
 package com.halil.ozel.covid19stats.ui.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -74,7 +75,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryH
 
 
     @Override
-    public void onBindViewHolder(CountryHolder holder, final int position) {
+    public void onBindViewHolder(CountryHolder holder, @SuppressLint("RecyclerView") final int position) {
         holder.countryTitle.setText("Total Death : " + countriesListed.get(position).getDeaths());
         holder.countryName.setText(countriesListed.get(position).getCountry());
         Picasso.with(context).
