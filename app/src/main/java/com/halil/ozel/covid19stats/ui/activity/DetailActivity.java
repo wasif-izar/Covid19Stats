@@ -2,6 +2,7 @@ package com.halil.ozel.covid19stats.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,6 +16,7 @@ public class DetailActivity extends AppCompatActivity {
     ImageView ivCountryPoster;
     TextView tvCountryName, tvTodayCases, tvTodayDeath, tvTotalTests, tvTotalCases, tvTotalDeaths, tvTotalRecovered;
 
+    @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +49,19 @@ public class DetailActivity extends AppCompatActivity {
         tvTotalCases.setText(totalCases);
         tvTotalDeaths.setText(totalDeaths);
         tvTotalRecovered.setText(totalRecovered);
+
+        //changes
+        tvCountryName.setTextColor(R.color.blue);
+        tvTodayCases.setTextColor(R.color.blue);
+//        tvTodayCases.setText(todayCase);
+//        tvTodayDeath.setText(todayDeath);
+//
+        tvTotalTests.setTextColor(R.color.blue);
+//        tvTotalCases.setText(totalCases);
+        tvTotalDeaths.setTextColor(R.color.blue);
+//        tvTotalRecovered.setText(totalRecovered);
+
+        //changes end
 
 
         Picasso.with(getApplicationContext()).

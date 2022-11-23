@@ -54,6 +54,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                android:textColor="@color/blue"
                 android:text="Today Cases : "
                 android:textSize="20sp" />
 
@@ -153,6 +154,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
+                android:textColor="@color/blue"
                 android:layout_marginEnd="10dp"
                 android:text="Total Cases : "
                 android:textSize="20sp" />
@@ -222,6 +224,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                android:textColor="@color/colorPrimary"
                 android:text="Total Recovered : "
                 android:textSize="20sp" />
 
